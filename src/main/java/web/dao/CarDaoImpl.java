@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class CarServiceImpl implements CarDao {
+public class CarDaoImpl implements CarDao {
 
-    private static List<Car> cars;
+    private static final List<Car> cars;
 
-    {
+    static {
         cars = new ArrayList<>();
         cars.add(new Car("Haval", "red", 2019));
         cars.add(new Car("BMV", "blue", 2018));
